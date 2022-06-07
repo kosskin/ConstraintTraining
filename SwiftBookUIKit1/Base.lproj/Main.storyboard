@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="JmR-e4-YPm">
+            <objects>
+                <viewController id="JfC-d5-wQn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4IY-W1-dub">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KLy-Qy-ggu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YzF-uw-gJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="78"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftBookUIKit1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxZ-6m-pDz">
+                                <rect key="frame" x="147" y="132" width="120" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joJ-Eh-GMh">
+                                <rect key="frame" x="147" y="695" width="120" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VhF-9Q-szS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOp-yy-ihn">
+                                <rect key="frame" x="147" y="630" width="120" height="30"/>
+                                <state key="normal" title="Action2"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zPG-3M-Ooz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTL-08-ogK">
+                                <rect key="frame" x="147" y="551" width="120" height="41"/>
+                                <state key="normal" title="Action1"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v2z-wd-uPm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.89105095440000004" blue="0.55311895099999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="joJ-Eh-GMh" secondAttribute="bottom" constant="126" id="0yO-8l-qfw"/>
+                            <constraint firstItem="cxZ-6m-pDz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2ud-WV-gDS"/>
+                            <constraint firstItem="gTL-08-ogK" firstAttribute="width" secondItem="MOp-yy-ihn" secondAttribute="width" id="4uG-5J-cpL"/>
+                            <constraint firstItem="gTL-08-ogK" firstAttribute="centerX" secondItem="MOp-yy-ihn" secondAttribute="centerX" id="5st-C6-How"/>
+                            <constraint firstItem="joJ-Eh-GMh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Kn5-1P-bPj"/>
+                            <constraint firstItem="joJ-Eh-GMh" firstAttribute="top" secondItem="MOp-yy-ihn" secondAttribute="bottom" constant="46" id="XkQ-Gz-Dr2"/>
+                            <constraint firstItem="MOp-yy-ihn" firstAttribute="top" secondItem="gTL-08-ogK" secondAttribute="bottom" constant="78" id="aDV-5x-sw2"/>
+                            <constraint firstItem="cxZ-6m-pDz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aTJ-6s-GiB"/>
+                            <constraint firstItem="MOp-yy-ihn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jHc-wG-r5g"/>
+                            <constraint firstItem="cxZ-6m-pDz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="mnG-KY-hh4"/>
+                            <constraint firstItem="MOp-yy-ihn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.289855" id="mpF-GA-PBZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="joJ-Eh-GMh" id="FdM-Jj-IG5"/>
+                        <outlet property="label" destination="cxZ-6m-pDz" id="W1b-Cp-Y8e"/>
+                        <outletCollection property="actionButtons" destination="gTL-08-ogK" collectionClass="NSMutableArray" id="cyr-E0-flc"/>
+                        <outletCollection property="actionButtons" destination="MOp-yy-ihn" collectionClass="NSMutableArray" id="4cp-yu-dXi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528.98550724637687" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
